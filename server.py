@@ -10,8 +10,8 @@ app = Flask(__name__)
 
 load_dotenv()
 
-EMAIL = os.getenv('EMAIL')
-PASSWD = os.getenv('PASSWD')
+EMAIL = '<EMAIL>'
+PASSWD = '<PASSWD>'
 cookie_path_dir = "./cookies/" 
 sign = Login(EMAIL, PASSWD)
 cookies = sign.login(cookie_dir_path=cookie_path_dir, save_cookies=True)
